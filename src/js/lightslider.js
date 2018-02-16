@@ -362,7 +362,7 @@
                         if (settings.mode === 'slide') {
                             if ((v) >= w - elSize - settings.slideMargin) {
                                 i = i + 1;
-                                var minPgr = 2;
+                                var minPgr = settings.minPager || 2;
                                 if (settings.autoWidth) {
                                     pagers += '<li><a href="#">' + (i + 1) + '</a></li>';
                                     minPgr = 1;
